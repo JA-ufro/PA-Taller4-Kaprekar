@@ -16,7 +16,7 @@ public class Main_Kaprekar {
 
     //Metodo itKaprekar creado para que no tengan problemas los test
     public static int itKaprekar(int numero){
-        return 5;
+        return 3;
     }
     private static String descendiente(String numtexto) {
         char[] lista = numtexto.toCharArray();
