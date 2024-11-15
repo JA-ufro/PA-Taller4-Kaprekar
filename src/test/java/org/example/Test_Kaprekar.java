@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 // 1) la función kaprekarOp realizará el ordenamiento y resta descrita en el algoritmo
 // 2) la función itKaprekar usará kaprekarOp y retonará cuantas iteraciones tomó llegar a la constante
 
+import static org.example.Main_Kaprekar.*;
+
 public class Test_Kaprekar{
 
     @Test
