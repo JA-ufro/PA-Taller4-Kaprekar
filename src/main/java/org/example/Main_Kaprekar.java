@@ -16,10 +16,12 @@ public class Main_Kaprekar {
 
     //Metodo itKaprekar creado para que no tengan problemas los test
     public static int itKaprekar(int numero){
-        if(numero==5200){
-          return 7;
+        int contador = 0;
+        while (numero != 6174){
+            numero = kaprekarOp(numero);
+            contador++;
         }
-        return 3;
+        return contador;
     }
     private static String descendiente(String numtexto) {
         char[] lista = numtexto.toCharArray();
@@ -30,6 +32,11 @@ public class Main_Kaprekar {
     }
 
     private static String ascendiente(String numtexto) {
+        if(numtexto.length() <4){
+            while(numtexto.length() <4) {
+                numtexto = "0" + numtexto;
+            }
+        }
         char[] lista1 = numtexto.toCharArray();
         Arrays.sort(lista1);
         return new String(lista1);
